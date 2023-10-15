@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(235, 232, 232);
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: rgb(240, 240, 240);
+}
+
+.menu {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(83, 59, 108);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 15;
+    top: 0;
+    left: 0;
+}
+
+.logo1{
+    width: 200px;
+    height: 100%;
+    line-height: 40px;
+    font-size: 22px;
+    margin-left: 20px;
+    color: rgb(196, 193, 193);
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+
+.logo1 img {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    margin-right: 5px;
+}
+
+.logo1 .logo11 {
+    color: rgb(143, 57, 192);
+}
+
+.menu .logo2 {
+    min-width: 30%;
+    height: 100%;
+}
+
+.menu .logo2>ul{
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+}
+
+.logo2 .ul1>li{
+    width: 100px;
+    height: 100%;
+    margin: 0px 20px;
+    text-align: center;
+    line-height: 40px;
+    transition: 0.2s;
+}
+
+.logo2 .ul2{
+    width: 100%;
+    height: 0px;
+    list-style: none;
+    background-color: rgb(83, 59, 108);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: height 0.3s;
+}
+
+.ul2>li{
+    width: 100%;
+    height: 40px;
+    transition: 0.2s;
+}
+
+.ul2>li a{
+    color: rgb(235, 232, 232);
+}
+
+.ul1>li:hover{
+    background-color: rgb(235, 232, 232);
+}
+
+.ul1>li:hover>a{
+    color: blueviolet;
+}
+
+.ul1>li:hover .ul2{
+    height: 120px;
+}
+
+.ul2>li:hover{
+    background-color: rgb(235, 232, 232);
+}
+
+.ul2>li:hover>a{
+    color: blueviolet;
+}
+
+.notice {
+    width: 400px;
+    height: 20px;
+    line-height: 20px;
+    position: absolute;
+    top: 100px;
+    left: 980px;
+    user-select: none;
+    color: rgb(201, 69, 69);
+}
+
+.music {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+}
+
+.introduce {
+    width: 83%;
+    margin-top: 60px;
+}
+
+.title {
+    font-size: 22px;
+    font-weight: 500;
+    padding-left: 10px;
+    margin-bottom: 40px;
+    border-left: 4px solid rgb(83, 59, 108);
+}
+
+.introduceBox {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.introduce1{
+    width: 15%;
+    height: 500px;
+    margin-bottom: 20px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.introduce1 img {
+    width: 100%;
+    height: 100%;
+    transition: 0.4s;
+}
+
+.introduce1 img:first-child{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.introduce1 img:nth-child(2){
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+.introduce1:hover img:first-child{
+    left: -100%;
+}
+
+.introduce1:hover img:nth-child(2){
+    left: 0;
+}
+
+.introduce2{
+    width: 35%;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    user-select: none;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.introduce2 .textbox {
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.introduce2 .textbox:first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.introduce2 .textbox:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: -100%;
+}
+
+.introduce2:hover .textbox:first-child {
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.introduce2:hover .textbox:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.textbox h2 {
+    margin-top: 20px;
+}
+
+.textbox .text{
+    width: 100%;
+    padding: 35px;
+    font-size: 18px;
+    text-align: left;
+}
+
+
+
+.end {
+    width: 100%;
+    height: 250px;
+    background-color: rgb(32, 31, 31);
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.end1 {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.end2 {
+    width: 100%;
+    height: 190px;
+    text-align: center;
+    color: rgb(172, 173, 174);
+    margin-top: 25px;
+}
+
